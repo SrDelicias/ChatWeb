@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Press Start 2P', cursive;
-  background-image: url(img/pixel-art-jak-zaczac-1-e1668726868411-1400x794.jpg);
+  background-image: url(img/city-pixel-art-8ptr08abde3xvuh4.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,6 +34,7 @@ body {
   font-weight: bold;
 }
 
+
 .header-right button {
   font-family: 'Press Start 2P', cursive;
   background-color: #3fff8c;
@@ -47,7 +48,7 @@ body {
 }
 
 .header-right button:hover {
-  background-color: #2ad66f;
+  background-color: #1fa634;
 }
 
 
@@ -119,5 +120,5 @@ body {
 }
 
 .chat-input button:hover {
-  background-color: #2ad66f;
+  background-color: #1fa634;
 }
