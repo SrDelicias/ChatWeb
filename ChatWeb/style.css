@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-image: url(img/pixel-art-jak-zaczac-1-e1668726868411-1400x794.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px; /* deja espacio para el header */
+}
+.pixel-header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: 4px solid #3fff8c;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px;
+  color: #3fff8c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header-left {
+  font-weight: bold;
+}
+
+.header-right button {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #3fff8c;
+  color: #000;
+  border: 2px solid #000;
+  margin-left: 12px;
+  padding: 8px 10px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.header-right button:hover {
+  background-color: #2ad66f;
+}
+
+
+/* Contenedor general del chat */
+.chat-box {
+  width: 600px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 4px solid #3fff8c;
+  padding: 12px;
+  box-shadow: 0 0 16px #3fff8c;
+}
+
+/* Área de mensajes */
+.chat-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #3fff8c;
+  margin-bottom: 12px;
+  max-height: 60vh; /* <--- el límite de altura */
+  min-height: 150px; /* opcional: altura mínima para que no se vea demasiado pequeño al principio */
+}
+
+/* Cada mensaje */
+.message {
+  background-color: #ec9090;
+  border: 2px solid #3fff8c;
+  padding: 8px;
+  margin: 10px 0;
+  max-width: 70%;
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #3fff8c;
+  color: #000;
+}
+
+/* Entrada de texto y botón */
+.chat-input {
+  display: flex;
+  gap: 8px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  background-color: #222;
+  color: #fff;
+  border: 2px solid #3fff8c;
+  outline: none;
+}
+
+.chat-input button {
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  background-color: #3fff8c;
+  color: #000;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #2ad66f;
+}
