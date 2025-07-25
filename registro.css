@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/city-pixel-art-8ptr08abde3xvuh4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 4px solid #3fff8c;
+    box-shadow: 0 0 16px #3fff8c;
+
+}
+
+.form-container {
+    flex: 1;
+    background-color: black;
+    padding: 40px;
+    transition: all 0.5s;
+    overflow-y: auto;
+}
+
+.info-container {
+    flex: 1;
+    background: black;
+    color: #3fff8c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #3fff8c;
+}
+
+.info-container h1 {
+    color: #3fff8c;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #3fff8c;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #3fff8c;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: #3fff8c;
+    border: 4px solid #3fff8c;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #01580e;
+}
+
+.switch-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.switch-form a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.switch-form a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilos para el divisor "o inicia sesión con" */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #3fff8c;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+/* Estilos para botones de redes sociales redondos en fila */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-btn i {
+    font-size: 22px;
+}
+
+.social-btn.facebook {
+    background-color: #4267B2;
+}
+
+.social-btn.google {
+    background-color: #DB4437;
+}
+
+.social-btn.apple {
+    background-color: #555;
+}
+
+.social-btn.twitter {
+    background-color: #025183;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    
+    .info-container {
+        padding: 20px;
+    }
+    
+    .form-container {
+        max-height: 500px;
+    }
+    
+    /* Ajustar tamaño de botones sociales en móvil */
+    .social-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
