@@ -35,3 +35,6 @@ document.getElementById('sendBtn').addEventListener('click', sendMessage);
 document.getElementById('messageInput').addEventListener('keydown', function (e) {
   if (e.key === 'Enter') sendMessage();
 });
+
+
+
